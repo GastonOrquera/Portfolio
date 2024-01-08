@@ -369,9 +369,13 @@ hr {
     }
 
     .ilustracion {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
 
+    }
+
+    .code {
+        display: none;
     }
 
     .flex-p {
@@ -380,7 +384,8 @@ hr {
 
     .projects-grid img {
 
-        width: 400px;
+        height: 300px;
+        width: 300px;
 
     }
 
