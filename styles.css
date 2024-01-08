@@ -109,8 +109,9 @@ nav ul li a.active {
 /* Start Welcome Section */
 
 #welcome-section {
-    height: max-content;
+    height: 100vh;
     width: 100%;
+    max-height: 100vh;
     display: flex;
     background-color: #0b1615;
     padding: 2.6rem 4rem;
@@ -382,6 +383,10 @@ hr {
         flex-direction: column;
     }
 
+    .projects {
+        padding: 1rem;
+    }
+
     .projects-grid img {
 
         height: 300px;
@@ -391,6 +396,7 @@ hr {
 
     #welcome-section {
         padding: 1rem 1rem;
+        height: 80vh;
     }
 
     #welcome-section .flex p {
@@ -399,6 +405,11 @@ hr {
 
     #welcome-section .flex h1,
     footer h2 {
+        font-size: 1.8rem;
+    }
+
+    #projects .projects-section-header {
+        padding: 1rem 1rem;
         font-size: 1.8rem;
     }
 
