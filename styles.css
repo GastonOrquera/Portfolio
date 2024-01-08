@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Roboto Mono', monospace;
+    --color1: #d3ff8cc0;
+    --color2: #ffe600;
+    --color3: #0602dd;
+}
+
+body {
+    background-color: #317a74;
+}
+
+header {
+    background-color: #0b1615;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+}
+
+.index {
+    color: #cfcfcf;
+}
+
+header h2,
+header .code {
+    font-family: var(--font2);
+    font-size: 1.2rem;
+}
+
+header h2:hover {
+    color: #d3ff8cc0;
+}
+
+header ul {
+    display: flex;
+    gap: 4rem;
+    font-family: var(--font1);
+}
+
+header ul li a {
+    display: block;
+    color: #cfcfcf;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: 0.2s;
+    text-decoration: none;
+    font-family: var(--font2);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+header ul li {
+    position: relative;
+
+}
+
+header ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #3832005d;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 1s;
+    animation: barrita 2s ease-in-out infinite;
+}
+
+@keyframes barrita {
+    0% {
+        background: var(--color1);
+    }
+
+    50% {
+        background: var(--color2);
+    }
+
+    100% {
+        background: var(--color3);
+    }
+
+}
+
+nav ul li:hover::after {
+    content: '';
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e6e6e6;
+}
+
+/* End Header */
+
+/* Start Welcome Section */
+
+#welcome-section {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    background-color: #0b1615;
+    padding: 2.6rem 4rem;
+    justify-content: space-evenly;
+}
+
+#welcome-section .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+h1,
+p {
+    color: #cfcfcf;
+}
+
+#welcome-section .flex h1,
+footer h2 {
+    font-family: var(--font1);
+    font-size: 2.8rem;
+}
+
+#welcome-section .flex p {
+    font-family: var(--font2);
+    font-size: 2.4rem;
+}
+
+.ilustracion {
+    background-image: url(ezsn_zsmz_220227.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 500px;
+    max-height: 500px;
+    height: 500px;
+    width: 500px;
+    border-top-right-radius: 38%;
+    border-bottom-left-radius: 38%;
+    border-bottom-right-radius: 48%;
+    border-top-left-radius: 68%;
+    background-color: #0b1615;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.400);
+    opacity: 70%;
+    animation: move 4s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0);
+    }
+
+    20% {
+        transform: rotate(-1deg);
+    }
+
+    40% {
+        transform: rotate(-2deg);
+    }
+
+    60% {
+        transform: rotate(1deg);
+        transform: rotateX('20deg');
+    }
+
+    100% {
+
+        transform: rotate(0);
+    }
+}
+
+.btn-contact {
+    background-color: #ffe600;
+    font-family: var(--font1);
+    padding: .2rem 2rem;
+    color: #0b1615;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    animation: barrita3 5s ease-in-out infinite;
+
+}
+
+.btn-contact:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    background-color: var(--color1);
+
+}
+
+/* END SECTION */
+
+/* START SECTION PROJECTS */
+
+#projects {
+
+    background-color: #0b1615;
+    padding: 2rem;
+}
+
+#projects .projects-section-header {
+    color: #e6e6e6;
+    font-family: var(--font1);
+    padding: 2rem 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+
+}
+
+
+.projects-grid {
+    margin-top: 3.2rem;
+    background-color: #2e3d3c41;
+    border-radius: 2%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.4rem;
+    animation: shadow 8s linear infinite;
+}
+
+@keyframes shadow {
+
+    1% {
+        box-shadow: 0px 0px 6px 0px #b6b6b62f;
+    }
+
+    50% {
+        box-shadow: 0px 0px 8px 0px #ffda732f;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px 0px #031dad2f;
+    }
+
+}
+
+.projects-grid img {
+    max-width: max-content;
+    width: 500px;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.project-title {
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--font2);
+}
+
+.project-title:hover {
+    color: var(--color2);
+}
+
+.project-title.p1:hover {
+    color: var(--color1);
+}
+
+.project-tile {
+    border: 1px solid #cdf2fa31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-p {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* End section projects  */
+
+/* Start footer */
+
+footer {
+    background-color: #0b1615;
+    color: #cfcfcf;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+footer>.line {
+    height: 3px;
+    width: 24%;
+    position: absolute;
+    background-color: yellow;
+    top: 20rem;
+}
+
+footer .line-space {
+    height: 3px;
+    width: 4rem;
+    background-color: #0602dd;
+}
+
+footer i {
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: 2s;
+}
+
+hr {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    opacity: 8%;
+    width: 20%;
+}
+
+.bi-whatsapp:hover {
+    color: rgba(50, 205, 50, 0.425);
+}
+
+.bi-instagram:hover {
+    color: var(--color1);
+}
+
+.bi-linkedin:hover {
+    color: #0A66C2;
+}
+
+.bi-twitter-x:hover {
+    color: #73a0cc;
+}
+
+/* End footer */
+
+/* Media */
+
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+    header {
+        padding: 1rem 1rem;
+
+    }
+
+    header ul {
+        gap: 1rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    header ul li a {
+        font-size: .8rem;
+    }
+
+    .ilustracion {
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .flex-p {
+        flex-direction: column;
+    }
+
+    .projects-grid img {
+
+        width: 400px;
+
+    }
+
+    #welcome-section {
+        padding: 1rem 1rem;
+    }
+
+    #welcome-section .flex p {
+        font-size: 1.4rem;
+    }
+
+    #welcome-section .flex h1,
+    footer h2 {
+        font-size: 1.8rem;
+    }
+
+    footer hr {
+        width: 40%;
+    }
+}

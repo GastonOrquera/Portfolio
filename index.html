@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!-- START NAV -->
+
+    <header>
+        <a class="index" href="index.html">
+            <h2>
+                <span class="code">&lt;</span> Portfolio <span class="code">&#47;&gt;</span>
+            </h2>
+        </a>
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#welcome-section">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- END NAV -->
+
+    <!-- START  SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+        <div class="flex">
+            <h1>Hey I am Gaston</h1>
+            <p>a web developer</p>
+            <a class="btn-contact" href="#">Contact</a>
+        </div>
+
+        <div class="ilustracion"></div>
+    </section>
+
+    <!-- END SECTION -->
+
+    <!-- Start Section Projects -->
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header scroll-reveal1">These are some of my projects</h2>
+
+        <div class="projects-grid scroll-reveal2">
+
+            <div class="flex-p">
+                <a href="https://codepen.io/Gaston-Orquera/details/poYywmr" target="_blank"
+                    class="project project-tile">
+                    <img class="project-image" src="project-tribute.png" alt="project" />
+                    <p class="project-title">
+                        <span class="code">&lt;</span>
+                        Tribute Page
+                        <span class="code">&#47;&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/Gaston-Orquera/pen/WNmwOWR" target="_blank" class="project project-tile">
+                    <img class="project-image" src="project-form.png" alt="project" />
+                    <p class="project-title p1">
+                        <span class="code">&lt;</span>
+                        Form Page
+                        <span class="code">&#47;&gt;</span>
+                    </p>
+                </a>
+            </div>
+            <div class="flex-p">
+                <a href="https://codepen.io/Gaston-Orquera/pen/KKEzqJm" target="_blank" class="project project-tile">
+                    <img class="project-image" src="project-js-documentation.png" alt="project" />
+                    <p class="project-title p1">
+                        <span class="code">&lt;</span>
+                        Documentation JS
+                        <span class="code">&#47;&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/Gaston-Orquera/pen/zYbqzba" target="_blank" class="project project-tile">
+                    <img class="project-image" src="project-landing-page.png" alt="project" />
+                    <p class="project-title">
+                        <span class="code">&lt;</span>
+                        Landing Page
+                        <span class="code">&#47;&gt;</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h2 id="contact" class="scroll-reveal2">Contact Me</h2>
+
+        <hr>
+        <i class="bi bi-whatsapp scroll-reveal1"></i>
+        <i class="bi bi-instagram scroll-reveal1"></i>
+        <i class="bi bi-linkedin scroll-reveal1"></i>
+        <i class="bi bi-twitter-x scroll-reveal1"></i>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
