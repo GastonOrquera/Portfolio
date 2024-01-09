@@ -261,7 +261,7 @@ footer h2 {
     max-width: max-content;
     width: 500px;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 
@@ -358,7 +358,6 @@ hr {
 @media only screen and (min-width: 200px) and (max-width: 800px) {
     header {
         padding: 1rem 1rem;
-
     }
 
     header ul {
@@ -392,22 +391,14 @@ hr {
         flex-direction: column;
     }
 
-    .projects {
-        padding: 1rem;
-    }
-
-    .projects-grid img {
-
-        height: 300px;
-        width: 300px;
-
-    }
-
-
-
     #welcome-section {
         padding: 1rem 1rem;
-        height: 80vh;
+        height: 68vh;
+    }
+
+    .projects-grid {
+        width: 320px;
+
     }
 
     #welcome-section .flex p {
@@ -422,6 +413,15 @@ hr {
     #projects .projects-section-header {
         padding: 1rem 1rem;
         font-size: 1.8rem;
+    }
+
+    .projects {
+        padding: 1rem;
+    }
+
+    .projects-grid img {
+        height: 280px;
+        width: 280px;
     }
 
     footer hr {
